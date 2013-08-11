@@ -25,3 +25,6 @@
 [submodule "bundle/misc"]
 	path = bundle/misc
 	url = https://github.com/xolox/vim-misc.git
+[submodule "bundle/vividchalk"]
+	path = bundle/vividchalk
+	url = https://github.com/tpope/vim-vividchalk.git
