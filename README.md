@@ -9,7 +9,9 @@ This containst instructions and notes for maintaining vim settings on github.
 
 ##Commit changes to local git repository
 	git commit . -m "Some commit message."
+
 or
+
 	git commit someFileName -m "Some commit message."
 
 ##Push changes to my github repository
@@ -18,6 +20,7 @@ You will be prompted for the user name and password, so have those handy.
 
 ##Update plugins
 *This command does not work.  Need to figure out how do get it to work.*
+
 	git submodule foreach git pull
 
 ##Pull the vim settings to a new machine
