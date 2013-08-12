@@ -7,6 +7,11 @@ This containst instructions and notes for maintaining vim settings on github.
 	git submodule add git://github.com/person/repo bundle/repo'
 	git submodule init && git submodule update
 
+##Commit changes to local git repository
+	git commit . -m "Some commit message."
+or
+	git commit someFileName -m "Some commit message."
+
 ##Push changes to my github repository
 	git push -u origin master
 You will be prompted for the user name and password, so have those handy.
