@@ -1,4 +1,4 @@
-###VIM Notes
+##VIM Notes
 
 This containst instructions and notes for maintaining vim settings on github.
 
