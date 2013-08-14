@@ -20,9 +20,10 @@ filetype plugin on
 
 " Appearance 
 set background=dark
+set t_Co=16
 " let g:solarized_termtrans=1
 " let g:solarized_termcolors=256
-" let g:solarized_termcolors=16
+let g:solarized_termcolors=16
 " let g:solarized_contrast="high"
 " let g:solarized_contrast="high"
 " let g:solarized_visibility="high"
