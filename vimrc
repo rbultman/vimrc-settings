@@ -32,5 +32,10 @@ colorscheme solarized
 
 " Mappings 
 " map <C-t> :tabnew <Enter> <- conflicts with return from tab stack
+let mapleader=","
 map <C-o> :NERDTree<Enter>
 map <leader>s :TagbarToggle<Enter>
+map <leader>t :tabnew<cr>
+map <leader>x :q<cr>
+map <leader>o :NERDTree<cr>
+map <leader>f :CommandT<cr>
