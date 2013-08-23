@@ -38,3 +38,4 @@ map <leader>t :tabnew<cr>
 map <leader>x :q<cr>
 map <leader>o :NERDTree<cr>
 map <leader>f :CommandT<cr>
+
