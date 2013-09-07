@@ -28,7 +28,7 @@ set t_Co=16
 " let g:solarized_contrast="high"
 " let g:solarized_visibility="high"
 " let g:solarized_visibility="high"
-colorscheme solarized
+colorscheme base16-monokai
 
 " Mappings 
 " map <C-t> :tabnew <Enter> <- conflicts with return from tab stack
