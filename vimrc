@@ -1,3 +1,6 @@
+" vimrc 
+" Copyright Rob Bultman 
+" 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -39,3 +42,4 @@ map <leader>t :tabnew<cr>
 map <leader>x :q<cr>
 map <leader>o :NERDTree<cr>
 map <leader>f :CommandT<cr>
+
