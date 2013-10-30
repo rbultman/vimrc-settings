@@ -23,11 +23,15 @@ filetype plugin on
 
 " Appearance 
 set background=dark
+set t_Co=16
 " let g:solarized_termtrans=1
 " let g:solarized_termcolors=256
+" let g:solarized_termcolors=16
+" let g:solarized_contrast="high"
 " let g:solarized_contrast="high"
 " let g:solarized_visibility="high"
-colorscheme solarized
+" let g:solarized_visibility="high"
+colorscheme base16-monokai
 
 " Mappings 
 " map <C-t> :tabnew <Enter> <- conflicts with return from tab stack
