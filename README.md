@@ -4,7 +4,7 @@ This containst instructions and notes for maintaining vim settings on github.
 
 ##Pull a new plugin from github
 	cd ~/.vim
-	git submodule add git://github.com/person/repo bundle/repo'
+	git submodule add git://github.com/person/repo bundle/repo
 	git submodule init && git submodule update
 
 ##Commit changes to local git repository
