@@ -1,6 +1,15 @@
 " vimrc 
 " Copyright Rob Bultman 
 " 
+
+" Junk for vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+" stuff being managed by vundle
+Bundle 'gmarik/vundle'
+Bundle 'valoric/YouCompleteMe'
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -31,7 +40,8 @@ set t_Co=16
 " let g:solarized_contrast="high"
 " let g:solarized_visibility="high"
 " let g:solarized_visibility="high"
-colorscheme base16-monokai
+" colorscheme base16-monokai
+colorscheme solarized
 
 " Mappings 
 " map <C-t> :tabnew <Enter> <- conflicts with return from tab stack
