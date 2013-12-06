@@ -2,7 +2,7 @@
 " Copyright Rob Bultman 
 " 
 
-" Junk for vundle
+" Junk for vundle - not sure how much of this is needed
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle
@@ -24,10 +24,6 @@ Bundle 'nanotech/jellybeans.vim.git'
 Bundle 'chriskempson/base16-vim.git'
 Bundle 'Valloric/YouCompleteMe'
 
-" pathogen is gone so comment out these
-" call pathogen#runtime_append_all_bundles()
-" call pathogen#helptags()
-
 set mouse=a
 
 syntax enable
@@ -42,7 +38,7 @@ set cursorline cursorcolumn
 " Map :Q map to :q
 command! Q q
 
-filetype plugin on
+filetype plugin indent  on
 
 " Appearance 
 set background=dark
