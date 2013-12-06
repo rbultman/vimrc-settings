@@ -8,7 +8,6 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 " stuff being managed by vundle
 Bundle 'gmarik/vundle'
-Bundle 'valoric/YouCompleteMe'
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
