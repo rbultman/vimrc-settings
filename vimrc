@@ -3,14 +3,29 @@
 " 
 
 " Junk for vundle
+set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 " stuff being managed by vundle
 Bundle 'gmarik/vundle'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-fugitive'
+Bundle 'majutsushi/tagbar'
+Bundle 'Raimondi/delimitMate'
+Bundle 'wincent/Command-T.git'
+Bundle 'tomtom/tcomment_vim.git'
+Bundle 'scrooloose/nerdtree.git'
+Bundle 'xolox/vim-easytags.git'
+Bundle 'xolox/vim-misc.git'
+Bundle 'tpope/vim-vividchalk.git'
+Bundle 'tomasr/molokai.git'
+Bundle 'nanotech/jellybeans.vim.git'
+Bundle 'chriskempson/base16-vim.git'
 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" pathogen is gone so comment out these
+" call pathogen#runtime_append_all_bundles()
+" call pathogen#helptags()
 
 set mouse=a
 
