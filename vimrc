@@ -22,6 +22,7 @@ Bundle 'tpope/vim-vividchalk.git'
 Bundle 'tomasr/molokai.git'
 Bundle 'nanotech/jellybeans.vim.git'
 Bundle 'chriskempson/base16-vim.git'
+Bundle 'Valloric/YouCompleteMe'
 
 " pathogen is gone so comment out these
 " call pathogen#runtime_append_all_bundles()
@@ -33,7 +34,6 @@ syntax enable
 
 " set-related settings
 set showtabline=2
-set nocompatible
 set history=500
 set ruler
 set laststatus=2
