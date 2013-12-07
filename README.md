@@ -1,12 +1,12 @@
 ## VIM Notes
 
 This contains instructions and notes for maintaining vim settings on github.
-They previously used Pathogen but I have now switched to [Vundle][] as the
-package manager.
+They previously used Pathogen but I have now switched to [Vundle](https://github.com/gmarik/vundle#about) 
+as the package manager.
 
 ## Install a new plugin
-Just add a new Bundle line to the vimrc.  See the [Vundle][] documentation
-for details.
+Just add a new Bundle line to the vimrc.  See the [Vundle](https://github.com/gmarik/vundle#about) 
+documentation for details.
 
 ## Commit changes to local git repository
 	git commit . -m "Some commit message."
