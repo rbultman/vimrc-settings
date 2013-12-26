@@ -142,7 +142,12 @@ Go to the [Table of Contents](#table-of-contents)
 |     Key       |   Action    |
 |:-------------:|---------------|
 |   v   | enter Visual mode. |
+|   V   | enter Visual mode for whole lines. |
 |   y   | yank a line or yank from visual start to current position |
+
+Note: After entering visual mode, the normal editing keystrokes work.  Press x 
+to delete the seleected text, cw to clear the text and enter insert mode,  etc. 
+You can also yank to registers.
 
 Go to the [Table of Contents](#table-of-contents)
 
@@ -206,7 +211,9 @@ Go to the [Table of Contents](#table-of-contents)
 |     Key       |   Action    |
 |:-------------:|---------------|
 | :tag tagname  | Jump to tag name |
-| ctrl-t        | return to jumped-from location |
+| ctrl-]        | Jump to the tag name under the cursor |
+| ctrl-t        | Return to jumped-from location |
+| :ts           | List all tag locations for the last tag found.  Useful of more than one definition of a tag occurs as might happen if TDD is being used. |
 
 Go to the [Table of Contents](#table-of-contents)
 
