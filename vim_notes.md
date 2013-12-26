@@ -1,3 +1,5 @@
+This is my Vim cheatsheet.
+
 ## Table of Contents
 1. [Movement](#movement)
 2. [Deleting](#deleting)
@@ -50,6 +52,8 @@
 |   m{a-zA-Z}   | mark the current position with the letter |
 |   `{a-zA-Z}   | go to the letter-marked position in the current file |
 |     `=        |  go to position when last editing this file |
+
+Go to the [Table of Contents](#table-of-contents)
 
 Editing commands generally follow the structure of:
 [register][num/range]<verb><noun|(i|a)<text object>>    
