@@ -1,5 +1,7 @@
 ## Table of Contents
 1 [Movement](#movement)
+2 [Deleting](#deleting)
+3 [Changing text](#changing-text)
 
 ## Movement
 |     Key       |   Action    |
