@@ -1,7 +1,21 @@
 ## Table of Contents
-1 [Movement](#movement)
-2 [Deleting](#deleting)
-3 [Changing text](#changing-text)
+1. [Movement](#movement)
+2. [Deleting](#deleting)
+3. [Changing text](#changing-text)
+4. [Using Counts with Commands](#using-counts-with-commands)
+5. [Undoing](#undoing)
+6. [Replacing](#replacing)
+7. [Pasting](#pasting)
+8. [Location and Searching](#location-and-searching)
+9. [Replacing](#replacing)
+10. [Visual Mode](#visual-mode)
+11. [Buffers](#buffers)
+12. [Using registers](#using-registers)
+13. [File Commands](#file-commands)
+14. [Windows](#windows)
+15. [Tags](#tags)
+16. [Tabs](#tabs)
+17. [Reflow and wrap text](#reflow-and-wrap-text)
 
 ## Movement
 |     Key       |   Action    |
@@ -136,7 +150,7 @@ Start vi with multiple files listed on the command line.
 |  <C-r>"   | Past from the default register while in insert mode or to the command line. |
 |  <C-r>a   | Past from the a register while in insert mode or to the command line. |
 
-## File Commands:
+## File Commands
 |     Key       |   Action    |
 |:-------------:|---------------|
 |  :edit filename.c  | edit a file |
@@ -172,7 +186,7 @@ Start vi with multiple files listed on the command line.
 |  gt       | go to next tab |
 |  gT       | go to previous tab |
 
-## Reflow/wrap Text
+## Reflow and wrap text
 |     Key       |   Action    |
 |:-------------:|---------------|
 |  gq  | Highlight the text to be reflowed an press gq |
