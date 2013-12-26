@@ -1,3 +1,6 @@
+## Table of Contents
+1 [Movement](#movement)
+
 ## Movement
 |     Key       |   Action    |
 |:-------------:|---------------|
