@@ -67,15 +67,21 @@ Editing commands generally follow the structure of:
 |    daw    |    delete a word in which the cursor appears including white space - identical to dw |
 |    diw    |    delete the word in which the cursor appears excluding white space - identical to de |
 
+Go to the [Table of Contents](#table-of-contents)
+
 ## Changing text
 |     Key       |   Action    |
 |:-------------:|---------------|
 |   ce/cw   | change until end of word - This deletes from the current location until the end of the word and changes to the input mode. |
 |    c$    | change until end of line - Erase from current position until the end of the line and changes to the input mode. |
 
+Go to the [Table of Contents](#table-of-contents)
+
 ## Using Counts with Commands
 Preceding a command with a count will repeat the command that many times.
 e.g. - 2dw - delete 2 words
+
+Go to the [Table of Contents](#table-of-contents)
 
 ## Undoing
 |     Key       |   Action    |
@@ -84,17 +90,23 @@ e.g. - 2dw - delete 2 words
 |    U   |    undo all changes on a line |
 | CTRL-R |    redo - undoes the effect of undos |
 
+Go to the [Table of Contents](#table-of-contents)
+
 ## Replacing
 |     Key       |   Action    |
 |:-------------:|---------------|
 |    r    |    replace current character |
 |    R    |    start overwrite mode |
 
+Go to the [Table of Contents](#table-of-contents)
+
 ## Pasting
 |     Key       |   Action    |
 |:-------------:|---------------|
 |    p    |    Paste text after the cursor.  This is like paste.  If you do dw to delete word, you can move the cursor to another place and type p to place the deleted text there.  The insertion will occur after the current cursor position. |
 |    P    |    Paste text before the cursor |
+
+Go to the [Table of Contents](#table-of-contents)
 
 ## Location and Searching
 |     Key       |   Action    |
@@ -112,6 +124,8 @@ e.g. - 2dw - delete 2 words
 |    *    | Find the word currently under the cursor |
 |    %    | Find matching parens, bracket, or brace |
 
+Go to the [Table of Contents](#table-of-contents)
+
 ## Replacing
 |     Key       |   Action    |
 |:--------------:|---------------|
@@ -122,11 +136,15 @@ e.g. - 2dw - delete 2 words
 | %s/old/new/gc  | Find all occurrences in the file and prompt for replace |
 | #,#s/old/new/g | The #'s represent starting and ending line numbers for the replacement. |
 
+Go to the [Table of Contents](#table-of-contents)
+
 ## Visual Mode
 |     Key       |   Action    |
 |:-------------:|---------------|
 |   v   | enter Visual mode. |
 |   y   | yank a line or yank from visual start to current position |
+
+Go to the [Table of Contents](#table-of-contents)
 
 ## Buffers
 Editing multiple files
@@ -139,6 +157,8 @@ Start vi with multiple files listed on the command line.
 | :last     | Switch to the last file in the list |
 | :args     | see which file you are on |
 | :args file1.c file2.c file3.c    |    Add new files to edit |
+
+Go to the [Table of Contents](#table-of-contents)
 
 ## Using registers
 |     Key       |   Action    |
@@ -154,11 +174,15 @@ Start vi with multiple files listed on the command line.
 |  <C-r>"   | Past from the default register while in insert mode or to the command line. |
 |  <C-r>a   | Past from the a register while in insert mode or to the command line. |
 
+Go to the [Table of Contents](#table-of-contents)
+
 ## File Commands
 |     Key       |   Action    |
 |:-------------:|---------------|
 |  :edit filename.c  | edit a file |
 |  :saveas move.c    | saves the current file as move.c and edits it. |
+
+Go to the [Table of Contents](#table-of-contents)
 
 ## Windows
 |     Key       |   Action    |
@@ -176,11 +200,15 @@ Start vi with multiple files listed on the command line.
 | :qall             | quit all windows |
 | :wall             | write all windows |
 
+Go to the [Table of Contents](#table-of-contents)
+
 ## Tags
 |     Key       |   Action    |
 |:-------------:|---------------|
 | :tag tagname  | Jump to tag name |
 | ctrl-t        | return to jumped-from location |
+
+Go to the [Table of Contents](#table-of-contents)
 
 ## Tabs
 |     Key       |   Action    |
@@ -190,13 +218,19 @@ Start vi with multiple files listed on the command line.
 |  gt       | go to next tab |
 |  gT       | go to previous tab |
 
+Go to the [Table of Contents](#table-of-contents)
+
 ## Reflow and wrap text
 |     Key       |   Action    |
 |:-------------:|---------------|
 |  gq  | Highlight the text to be reflowed an press gq |
 |   =  | Reformat a selected code block |
 
+Go to the [Table of Contents](#table-of-contents)
+
 ## To Do/Learn
 - motions
 - Add \<C-s\> for saving
+
+Go to the [Table of Contents](#table-of-contents)
 
