@@ -213,7 +213,7 @@ Go to the [Table of Contents](#table-of-contents)
 | :tag tagname  | Jump to tag name |
 | ctrl-]        | Jump to the tag name under the cursor |
 | ctrl-t        | Return to jumped-from location |
-| :ts           | List all tag locations for the last tag found.  Useful of more than one definition of a tag occurs as might happen if TDD is being used. |
+| :ts           | List all tag locations for the last tag found.  Useful if more than one definition of a tag occurs as might happen if TDD is being used. |
 
 Go to the [Table of Contents](#table-of-contents)
 
