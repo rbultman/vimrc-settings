@@ -174,5 +174,6 @@ Start vi with multiple files listed on the command line.
 |   =  | Reformat a selected code block |
 
 ## To Do/Learn
-motions
-Add <C-s> for saving
+- motions
+- Add \<C-s\> for saving
+
