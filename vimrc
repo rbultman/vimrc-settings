@@ -18,6 +18,7 @@ Bundle 'xolox/vim-easytags.git'
 Bundle 'xolox/vim-misc.git'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'jlanzarotta/bufexplorer'
+Bundle 'xolox/vim-session.git'
 " Colors
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-vividchalk.git'
@@ -40,11 +41,22 @@ set history=500
 set ruler
 set laststatus=2
 set cursorline cursorcolumn
-
-" Map :Q map to :q
-command! Q q
+" Highlight all words from the last search
+set incsearch
+set showmatch
+set hls
+" keep some lines above and below the cursor
+set scrolloff=3
+set showmode
+set showcmd
+set hidden
+set modelines=0
 
 filetype plugin indent  on
+
+" vim-session
+let g:session_autosave='yes'
+let g:session_directory='./'
 
 " Appearance 
 set background=dark
@@ -64,10 +76,16 @@ colorscheme solarized
 " Mappings 
 " map <C-t> :tabnew <Enter> <- conflicts with return from tab stack
 let mapleader=","
+" Map :Q map to :q and :W to :w
+command! Q q
+command! W w
 map <C-o> :NERDTree<Enter>
-map <leader>s :TagbarToggle<Enter>
+map <leader>b :TagbarToggle<Enter>
 map <leader>t :tabnew<cr>
 map <leader>x :q<cr>
 map <leader>o :NERDTree<cr>
 map <leader>f :CommandT<cr>
+" map grep for a C search for the WORD under the cursor
+nnoremap <leader>g :silent execute "grep! -RsnwI --include=*.[ch] " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
+
 
