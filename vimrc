@@ -60,19 +60,34 @@ let g:session_directory='./'
 
 " Appearance 
 set background=dark
-" set t_Co=16
 set t_Co=256
 " let g:solarized_termtrans=1
-" let g:solarized_termcolors=256
-" let g:solarized_termcolors=16
+let g:solarized_termcolors=256
 " let g:solarized_contrast="high"
 " let g:solarized_contrast="high"
 " let g:solarized_visibility="high"
 " let g:solarized_visibility="high"
 " colorscheme base16-monokai
-" solarized works nicely on the mac
 colorscheme solarized
 
+" IMPORTANT: Uncomment one of the following lines to force
+" using 256 colors (or 88 colors) if your terminal supports it,
+" but does not automatically use 256 colors by default.
+"set t_Co=256
+"set t_Co=88
+" if (&t_Co == 256 || &t_Co == 88) && !has('gui_running') &&
+" 	\ filereadable(expand("$HOME/bundle/guicolorscheme.vim/plugin/guicolorscheme.vim"))
+" 	" Use the guicolorscheme plugin to makes 256-color or 88-color
+" 	" terminal use GUI colors rather than cterm colors.
+" 	runtime! bundle/guicolorscheme.vim/plugin/guicolorscheme.vim
+" 	GuiColorScheme solarized
+" else
+" 	" For 8-color 16-color terminals or for gvim, just use the
+" 	" regular :colorscheme command.
+" 	colorscheme solarized
+" endif
+
+"
 " Mappings 
 " map <C-t> :tabnew <Enter> <- conflicts with return from tab stack
 let mapleader=","
