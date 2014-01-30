@@ -30,6 +30,11 @@ Bundle 'vim-scripts/muzzl.vim'
 Bundle 'phd'
 Bundle 'twilight'
 Bundle 'xterm16.vim'
+" Syntax Files
+Bundle 'xevz/vim-squirrel'
+
+" Syntax Files
+autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
 
 set mouse=a
 

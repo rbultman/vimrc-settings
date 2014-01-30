@@ -1,2 +1,5 @@
 .netrwhist
 bundle/
+default.vim
+doc
+sessions
