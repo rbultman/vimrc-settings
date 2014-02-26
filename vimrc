@@ -8,17 +8,47 @@ filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 " stuff being managed by vundle
+" Bundle management with Vundle
 Bundle 'gmarik/vundle'
+" misc stuff used by other plugins from xolox
+" Bundle 'xolox/vim-misc.git'
+" git plugin
 Bundle 'tpope/vim-fugitive'
+" put a list of the current tags in a sidebar
 Bundle 'majutsushi/tagbar'
+" automatic closing of quotes, parenthesis, brackets, etc.
 Bundle 'Raimondi/delimitMate'
+" plugin to make handle comments easier
 Bundle 'tomtom/tcomment_vim.git'
+" presents a tree for opening files
 Bundle 'scrooloose/nerdtree.git'
-Bundle 'xolox/vim-easytags.git'
-Bundle 'xolox/vim-misc.git'
+" syntax auto completion 
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'jlanzarotta/bufexplorer'
-Bundle 'xolox/vim-session.git'
+" buffer management
+" Bundle 'jlanzarotta/bufexplorer'
+" automatic session management
+" Bundle 'xolox/vim-session.git'
+" Another session saver
+Bundle 'powerman/vim-plugin-autosess'
+" make node programming easier.
+Bundle 'moll/vim-node'
+" Javscript related
+" Enhanced JavaScript Syntax for Vim
+Bundle 'jelera/vim-javascript-syntax.git'
+" a vim plug-in which provides support for expanding abbreviations similar to emmet
+Bundle 'mattn/emmet-vim.git'
+" Code-related plugins
+" Automated tag file generation and syntax highlighting of tags
+" Bundle 'xolox/vim-easytags.git'
+" cscope macros
+Bundle 'cscope_macros.vim'
+" see definitions like source insight
+" Bundle 'wesleyche/SrcExpl.git'
+" The 'Tag List' plugin is a source code browser plugin for Vim and
+" provides an overview of the structure of source code files and allows
+" you to efficiently browse through source code files for different
+" programming languages.
+" Bundle 'taglist.vim'
 " Colors
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-vividchalk.git'
@@ -33,6 +63,7 @@ Bundle 'xterm16.vim'
 " Syntax Files
 Bundle 'xevz/vim-squirrel'
 Bundle 'sirtaj/vim-openscad'
+Bundle 'sudar/vim-arduino-syntax'
 
 " Syntax Files
 autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
@@ -93,6 +124,11 @@ colorscheme solarized
 " 	colorscheme solarized
 " endif
 
+"let g:SrcExpl_pluginList = [ 
+"        \ "__Tag_List__", 
+"        \ "_NERD_tree_",
+" 	\ "__Tagbar__"
+"    \ ] 
 "
 " Mappings 
 " map <C-t> :tabnew <Enter> <- conflicts with return from tab stack
