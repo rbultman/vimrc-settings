@@ -32,6 +32,7 @@ Bundle 'twilight'
 Bundle 'xterm16.vim'
 " Syntax Files
 Bundle 'xevz/vim-squirrel'
+Bundle 'sirtaj/vim-openscad'
 
 " Syntax Files
 autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
