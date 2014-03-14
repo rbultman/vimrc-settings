@@ -11,7 +11,7 @@ call vundle#rc()
 " Bundle management with Vundle
 Bundle 'gmarik/vundle'
 " misc stuff used by other plugins from xolox
-" Bundle 'xolox/vim-misc.git'
+Bundle 'xolox/vim-misc.git'
 " git plugin
 Bundle 'tpope/vim-fugitive'
 " put a list of the current tags in a sidebar
@@ -27,9 +27,9 @@ Bundle 'Valloric/YouCompleteMe'
 " buffer management
 " Bundle 'jlanzarotta/bufexplorer'
 " automatic session management
-" Bundle 'xolox/vim-session.git'
+Bundle 'xolox/vim-session.git'
 " Another session saver
-Bundle 'powerman/vim-plugin-autosess'
+" Bundle 'powerman/vim-plugin-autosess'
 " make node programming easier.
 Bundle 'moll/vim-node'
 " Javscript related
