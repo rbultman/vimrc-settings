@@ -92,8 +92,8 @@ set modelines=0
 filetype plugin indent  on
 
 " vim-session
-let g:session_autosave='yes'
-let g:session_directory='./'
+" let g:session_autosave='yes'
+" let g:session_directory='./'
 
 " Appearance 
 set background=dark
@@ -143,6 +143,7 @@ map <leader>x :q<cr>
 map <leader>o :NERDTree<cr>
 map <leader>f :CommandT<cr>
 " map grep for a C search for the WORD under the cursor
-nnoremap <leader>g :silent execute "grep! -RsnwI --include=*.[ch] " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
+" nnoremap <leader>g :silent execute "grep! -RsnwI --include=*.[ch] " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
 
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 
