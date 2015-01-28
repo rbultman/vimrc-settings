@@ -49,6 +49,9 @@ Bundle 'cscope_macros.vim'
 " you to efficiently browse through source code files for different
 " programming languages.
 " Bundle 'taglist.vim'
+" Syntastic syntax checker
+Bundle 'scrooloose/syntastic'
+"
 " Colors
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-vividchalk.git'
