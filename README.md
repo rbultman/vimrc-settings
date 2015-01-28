@@ -34,7 +34,7 @@ settings.
 	cd .vim
 	git clone https://github.com/rbultman/vimrc-settings.git .
 	mkdir ~/.vim/bundle
-	git clone https://github.com/gmarik/vundle.git bundle/vundle
+	git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 The next two lines add bundle and another file to .gitignore.  Since
 [Vundle](https://github.com/gmarik/vundle#about) manages the git clones for
@@ -45,7 +45,7 @@ you, you don't need to use git submodules and manually clone.
 
 Start vim and type:
 
-	:BundleInstall
+	:PluginInstall
 
 	
 
