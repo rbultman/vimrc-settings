@@ -5,68 +5,68 @@
 " Junk for vundle - not sure how much of this is needed
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+" set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " stuff being managed by vundle
-" Bundle management with Vundle
-Bundle 'gmarik/vundle'
-" misc stuff used by other plugins from xolox
-" Bundle 'xolox/vim-misc.git'
-" git plugin
-Bundle 'tpope/vim-fugitive'
-" put a list of the current tags in a sidebar
-Bundle 'majutsushi/tagbar'
-" automatic closing of quotes, parenthesis, brackets, etc.
-Bundle 'Raimondi/delimitMate'
-" plugin to make handle comments easier
-Bundle 'tomtom/tcomment_vim.git'
-" presents a tree for opening files
-Bundle 'scrooloose/nerdtree.git'
+" Plugin management with Vundle
+Plugin 'gmarik/Vundle.vim'
 " syntax auto completion 
-Bundle 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+" misc stuff used by other plugins from xolox
+Plugin 'xolox/vim-misc.git'
+" git plugin
+Plugin 'tpope/vim-fugitive'
+" put a list of the current tags in a sidebar
+Plugin 'majutsushi/tagbar'
+" automatic closing of quotes, parenthesis, brackets, etc.
+Plugin 'Raimondi/delimitMate'
+" plugin to make handle comments easier
+Plugin 'tomtom/tcomment_vim.git'
+" presents a tree for opening files
+Plugin 'scrooloose/nerdtree.git'
 " buffer management
-" Bundle 'jlanzarotta/bufexplorer'
+" Plugin 'jlanzarotta/bufexplorer'
 " automatic session management
-" Bundle 'xolox/vim-session.git'
-" Another session saver
-Bundle 'powerman/vim-plugin-autosess'
+Plugin 'xolox/vim-session.git'
 " make node programming easier.
-Bundle 'moll/vim-node'
+Plugin 'moll/vim-node'
 " Javscript related
 " Enhanced JavaScript Syntax for Vim
-Bundle 'jelera/vim-javascript-syntax.git'
+Plugin 'jelera/vim-javascript-syntax.git'
 " a vim plug-in which provides support for expanding abbreviations similar to emmet
-Bundle 'mattn/emmet-vim.git'
+Plugin 'mattn/emmet-vim.git'
 " Code-related plugins
-" Automated tag file generation and syntax highlighting of tags
-" Bundle 'xolox/vim-easytags.git'
+" Syntastic
+  Plugin 'scrooloose/syntastic'
 " cscope macros
-Bundle 'cscope_macros.vim'
+" Plugin 'cscope_macros.vim'
 " see definitions like source insight
-" Bundle 'wesleyche/SrcExpl.git'
+" Plugin 'wesleyche/SrcExpl.git'
 " The 'Tag List' plugin is a source code browser plugin for Vim and
 " provides an overview of the structure of source code files and allows
 " you to efficiently browse through source code files for different
 " programming languages.
-" Bundle 'taglist.vim'
-" Syntastic syntax checker
-Bundle 'scrooloose/syntastic'
-"
+" Plugin 'taglist.vim'
+" Command-T - A file finder
 " Colors
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-vividchalk.git'
-Bundle 'tomasr/molokai.git'
-Bundle 'nanotech/jellybeans.vim.git'
-Bundle 'chriskempson/base16-vim.git'
-Bundle 'vim-scripts/vibrantink'
-Bundle 'vim-scripts/muzzl.vim'
-Bundle 'phd'
-Bundle 'twilight'
-Bundle 'xterm16.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-vividchalk.git'
+Plugin 'tomasr/molokai.git'
+Plugin 'nanotech/jellybeans.vim.git'
+Plugin 'chriskempson/base16-vim.git'
+Plugin 'vim-scripts/vibrantink'
+Plugin 'vim-scripts/muzzl.vim'
+Plugin 'phd'
+Plugin 'twilight'
+Plugin 'xterm16.vim'
 " Syntax Files
-Bundle 'xevz/vim-squirrel'
-Bundle 'sirtaj/vim-openscad'
-Bundle 'sudar/vim-arduino-syntax'
+Plugin 'xevz/vim-squirrel'
+Plugin 'sirtaj/vim-openscad'
+Plugin 'sudar/vim-arduino-syntax'
+" Required
+call vundle#end()
+filetype plugin indent on
 
 " Syntax Files
 autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
@@ -95,8 +95,9 @@ set modelines=0
 filetype plugin indent  on
 
 " vim-session
-" let g:session_autosave='yes'
-" let g:session_directory='./'
+let g:session_autosave='yes'
+let g:session_autoload = 'yes'
+let g:session_directory='./'
 
 " Appearance 
 set background=dark
@@ -132,7 +133,10 @@ colorscheme solarized
 "        \ "_NERD_tree_",
 " 	\ "__Tagbar__"
 "    \ ] 
-"
+
+" YouCompleteMe
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+
 " Mappings 
 " map <C-t> :tabnew <Enter> <- conflicts with return from tab stack
 let mapleader=","
@@ -141,12 +145,8 @@ command! Q q
 command! W w
 map <C-o> :NERDTree<Enter>
 map <leader>b :TagbarToggle<Enter>
-map <leader>t :tabnew<cr>
+map <leader>n :tabnew<cr>
 map <leader>x :q<cr>
 map <leader>o :NERDTree<cr>
 map <leader>f :CommandT<cr>
-" map grep for a C search for the WORD under the cursor
-" nnoremap <leader>g :silent execute "grep! -RsnwI --include=*.[ch] " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
-
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 
