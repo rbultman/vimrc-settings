@@ -39,6 +39,16 @@ Plugin 'mattn/emmet-vim.git'
 " Code-related plugins
 " Syntastic
   Plugin 'scrooloose/syntastic'
+" React Native
+  Plugin 'mxw/vim-jsx'
+  Plugin 'leafgarland/typescript-vim'
+  Plugin 'tpope/vim-sensible'
+  Plugin 'HerringtonDarkholme/yats.vim'
+  Plugin 'Quramy/tsuquyomi'
+  Plugin 'vim-airline/vim-airline'
+  Plugin 'sindresorhus/vim-xo'
+" swift stuff
+Plugin 'keith/swift.git'
 " cscope macros
 " Plugin 'cscope_macros.vim'
 " see definitions like source insight
