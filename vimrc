@@ -1,6 +1,6 @@
-" vimrc 
-" Copyright Rob Bultman 
-" 
+" vimrc
+" Copyright Rob Bultman
+"
 
 " Junk for vundle - not sure how much of this is needed
 set nocompatible
@@ -11,7 +11,7 @@ call vundle#begin()
 " stuff being managed by vundle
 " Plugin management with Vundle
 Plugin 'gmarik/Vundle.vim'
-" syntax auto completion 
+" syntax auto completion
 Plugin 'Valloric/YouCompleteMe'
 " misc stuff used by other plugins from xolox
 Plugin 'xolox/vim-misc.git'
@@ -106,7 +106,7 @@ let g:session_autosave='yes'
 let g:session_autoload = 'yes'
 let g:session_directory='./'
 
-" Appearance 
+" Appearance
 set background=dark
 set t_Co=256
 " let g:solarized_termtrans=1
@@ -135,16 +135,16 @@ colorscheme solarized
 " 	colorscheme solarized
 " endif
 
-"let g:SrcExpl_pluginList = [ 
-"        \ "__Tag_List__", 
+"let g:SrcExpl_pluginList = [
+"        \ "__Tag_List__",
 "        \ "_NERD_tree_",
 " 	\ "__Tagbar__"
-"    \ ] 
+"    \ ]
 
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 
-" Mappings 
+" Mappings
 " map <C-t> :tabnew <Enter> <- conflicts with return from tab stack
 let mapleader=","
 " Map :Q map to :q and :W to :w
