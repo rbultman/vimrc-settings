@@ -71,6 +71,8 @@ Plugin 'xterm16.vim'
 Plugin 'xevz/vim-squirrel'
 Plugin 'sirtaj/vim-openscad'
 Plugin 'sudar/vim-arduino-syntax'
+" tab stuff
+Plugin 'mkitt/tabline.vim'
 " Required
 call vundle#end()
 filetype plugin indent on
