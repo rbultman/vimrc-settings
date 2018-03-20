@@ -8,47 +8,71 @@ filetype off
 " set rtp+=~/.vim/bundle/vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 " stuff being managed by vundle
+
 " Plugin management with Vundle
 Plugin 'gmarik/Vundle.vim'
+
 " syntax auto completion
 Plugin 'Valloric/YouCompleteMe'
+
 " misc stuff used by other plugins from xolox
 Plugin 'xolox/vim-misc.git'
+
 " git plugin
 Plugin 'tpope/vim-fugitive'
+
 " put a list of the current tags in a sidebar
 Plugin 'majutsushi/tagbar'
+
 " automatic closing of quotes, parenthesis, brackets, etc.
 Plugin 'Raimondi/delimitMate'
+
 " plugin to make handle comments easier
 Plugin 'tomtom/tcomment_vim.git'
+
 " presents a tree for opening files
 Plugin 'scrooloose/nerdtree.git'
-" buffer management
-" Plugin 'jlanzarotta/bufexplorer'
+
+" workspace management
+Plugin 'thaerkh/vim-workspace'
+
 " automatic session management
 Plugin 'xolox/vim-session.git'
+
 " make node programming easier.
 Plugin 'moll/vim-node'
+
 " Javscript related
 " Enhanced JavaScript Syntax for Vim
 Plugin 'jelera/vim-javascript-syntax.git'
+
 " a vim plug-in which provides support for expanding abbreviations similar to emmet
 Plugin 'mattn/emmet-vim.git'
+
 " Code-related plugins
 " Syntastic
   Plugin 'scrooloose/syntastic'
+
 " React Native
   Plugin 'mxw/vim-jsx'
   Plugin 'leafgarland/typescript-vim'
   Plugin 'tpope/vim-sensible'
   Plugin 'HerringtonDarkholme/yats.vim'
   Plugin 'Quramy/tsuquyomi'
-  Plugin 'vim-airline/vim-airline'
-  Plugin 'sindresorhus/vim-xo'
+
+" Smart Tabline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'sindresorhus/vim-xo'
+
 " swift stuff
 Plugin 'keith/swift.git'
+
+" rust
+Plugin 'rust-lang/rust.vim'
+
 " cscope macros
 " Plugin 'cscope_macros.vim'
 " see definitions like source insight
@@ -59,6 +83,7 @@ Plugin 'keith/swift.git'
 " programming languages.
 " Plugin 'taglist.vim'
 " Command-T - A file finder
+
 " Colors
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-vividchalk.git'
@@ -73,6 +98,9 @@ Plugin 'sirtaj/vim-openscad'
 Plugin 'sudar/vim-arduino-syntax'
 " tab stuff
 Plugin 'mkitt/tabline.vim'
+
+" Auto update tag file on save
+" Plugin 'craigemery/vim-autotag'
 " Required
 call vundle#end()
 filetype plugin indent on
