@@ -45,6 +45,9 @@ Plugin 'preservim/tagbar'
 " YouCompleteMe
 Plugin 'ycm-core/YouCompleteMe'
 
+" pug syntax highlighter
+Plugin 'digitaltoad/vim-pug'
+
 call vundle#end()
 
 syntax enable
